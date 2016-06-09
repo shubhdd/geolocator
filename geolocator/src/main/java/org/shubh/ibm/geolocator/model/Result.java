@@ -2,6 +2,10 @@ package org.shubh.ibm.geolocator.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+/**
+ * @author sdeshmukh
+ *
+ */
 public class Result {
 
 	

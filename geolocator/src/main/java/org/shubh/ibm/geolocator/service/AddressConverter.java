@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 /**
- * @author ADMINIBM
+ * @author sdeshmukh
  *
  */
 public class AddressConverter {
@@ -22,12 +22,13 @@ public class AddressConverter {
 
 	 private static final String URL = "http://maps.googleapis.com/maps/api/geocode/json";
 
-	 /*
-	  * Here the fullAddress String is in format like
-	  * "address". 
-	  * .
-	  */
-	 public GoogleResponse convertToLatLong(String fullAddress) throws IOException {
+	
+	 /**
+	 * @param fullAddress
+	 * @return GoogleResponse
+	 * @throws IOException
+	 */
+	public GoogleResponse convertToLatLong(String fullAddress) throws IOException {
 
 	  /*
 	   * Create an java.net.URL object by passing the request URL in

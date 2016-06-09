@@ -1,5 +1,8 @@
 package org.shubh.ibm.geolocator.common.utility;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /**
  * @author sdeshmukh
@@ -7,6 +10,7 @@ package org.shubh.ibm.geolocator.common.utility;
  */
 public class CommonUtility {
 
+	public static final Logger logger =LoggerFactory.getLogger(CommonUtility.class);
 	/**
 	 * @param lat1
 	 * @param lon1
@@ -23,7 +27,7 @@ public class CommonUtility {
 		dist = dist * 60 * 1.1515;
 		//Distance in meteres
 		dist = dist * 1.609344;
-		System.out.println(shopName +" shop ditance is:"+dist);
+		logger.info(shopName +" shop ditance is:"+dist);
 		return dist;
 	}
 	

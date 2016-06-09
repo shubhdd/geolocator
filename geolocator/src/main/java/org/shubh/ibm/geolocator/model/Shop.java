@@ -1,5 +1,9 @@
 package org.shubh.ibm.geolocator.model;
 
+/**
+ * @author sdeshmukh
+ *
+ */
 public class Shop {
 	
 	private String shopName;
