@@ -25,6 +25,7 @@ public class LocatorService {
 	private static List<Shop> shops = DatabaseStorage.getShops();
 	
 	public  List<Shop> getShops(){
+		logger.info("getShops Called"+shops.size());
 		return shops;
 	}
 	

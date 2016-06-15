@@ -13,7 +13,7 @@ import org.shubh.ibm.geolocator.model.Shop;
 public class DatabaseStorage {
 
 	
-	private static ArrayList<Shop> shops = new ArrayList<Shop>();
+	private static List<Shop> shops = new ArrayList<Shop>();
 	
 	
 	
@@ -23,4 +23,7 @@ public class DatabaseStorage {
 	public static List<Shop> getShops(){
 		return shops;
 	}
+
+
+
 }
